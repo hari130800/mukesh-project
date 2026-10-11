@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Smart Plant Watering Reminder</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+```
+<header class="header">
+    <div>
+        <h1>🌱 PlantCare</h1>
+        <p>Your smart gardening companion</p>
+    </div>
+    <span class="badge">Smart Reminder</span>
+</header>
+
+<main class="container">
+
+    <section class="welcome">
+        <div>
+            <h2>Grow Happy, Healthy Plants! 🌿</h2>
+            <p>Keep track of your plants and never forget to water them.</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card">
+            <span>🌱</span>
+            <h3 id="totalPlants">0</h3>
+            <p>Total Plants</p>
+        </div>
+
+        <div class="stat-card">
+            <span>💧</span>
+            <h3 id="duePlants">0</h3>
+            <p>Watering Due</p>
+        </div>
+
+        <div class="stat-card">
+            <span>✅</span>
+            <h3 id="wateredPlants">0</h3>
+            <p>Watered Today</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>➕ Add a New Plant</h2>
+
+        <form id="plantForm">
+
+            <div class="form-group">
+                <label for="plantName">Plant Name</label>
+                <input
+                    type="text"
+                    id="plantName"
+                    placeholder="e.g. Rose Plant"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="interval">Watering Interval</label>
+                <select id="interval" required>
+                    <option value="1">Every 1 day</option>
+                    <option value="2">Every 2 days</option>
+                    <option value="3" selected>Every 3 days</option>
+                    <option value="5">Every 5 days</option>
+                    <option value="7">Every 7 days</option>
+                    <option value="14">Every 14 days</option>
+                </select>
+            </div>
+
+            <button type="submit" class="add-btn">
+                + Add Plant
+            </button>
+
+        </form>
+    </section>
+
+    <section class="plants-section">
+        <div class="section-heading">
+            <h2>🪴 My Plants</h2>
+            <span id="plantCount">0 plants</span>
+        </div>
+
+        <div id="plantList" class="plant-list"></div>
+
+        <p id="emptyMessage" class="empty-message">
+            No plants added yet. Add your first plant above! 🌱
+        </p>
+    </section>
+
+    <footer>
+        <p>🌿 Smart Plant Watering Reminder | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>

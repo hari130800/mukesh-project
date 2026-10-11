@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f2f7f1;
+color: #24352a;
+line-height: 1.6;
+}
+
+.header {
+background: #174d35;
+color: white;
+padding: 24px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+}
+
+.header h1 {
+font-size: 28px;
+}
+
+.header p {
+color: #d5e8d9;
+font-size: 14px;
+}
+
+.badge {
+background: #d9f4df;
+color: #174d35;
+padding: 8px 14px;
+border-radius: 25px;
+font-size: 13px;
+font-weight: bold;
+}
+
+.container {
+max-width: 1100px;
+margin: auto;
+padding: 30px 20px;
+}
+
+.welcome {
+background: linear-gradient(120deg, #d9f5d8, #f5fbe9);
+border-radius: 18px;
+padding: 35px 28px;
+margin-bottom: 25px;
+}
+
+.welcome h2 {
+font-size: 28px;
+margin-bottom: 8px;
+}
+
+.welcome p {
+color: #526858;
+}
+
+.stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 18px;
+margin-bottom: 30px;
+}
+
+.stat-card {
+background: white;
+border-radius: 15px;
+padding: 22px;
+text-align: center;
+box-shadow: 0 4px 15px #193b1a0c;
+}
+
+.stat-card span {
+font-size: 28px;
+}
+
+.stat-card h3 {
+font-size: 28px;
+color: #267448;
+}
+
+.stat-card p {
+color: #68776c;
+font-size: 14px;
+}
+
+.form-section,
+.plants-section {
+background: white;
+padding: 25px;
+border-radius: 16px;
+margin-bottom: 25px;
+box-shadow: 0 4px 15px #193b1a0c;
+}
+
+.form-section h2,
+.plants-section h2 {
+font-size: 21px;
+margin-bottom: 20px;
+}
+
+#plantForm {
+display: grid;
+grid-template-columns: 1fr 1fr auto;
+gap: 15px;
+align-items: end;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 7px;
+}
+
+.form-group label {
+font-size: 14px;
+font-weight: bold;
+}
+
+input,
+select {
+width: 100%;
+padding: 12px;
+border: 1px solid #d7e2d8;
+border-radius: 8px;
+background: white;
+font-size: 14px;
+outline: none;
+}
+
+input:focus,
+select:focus {
+border-color: #31945a;
+}
+
+button {
+cursor: pointer;
+border: none;
+border-radius: 8px;
+padding: 12px 17px;
+font-size: 14px;
+font-weight: bold;
+transition: 0.2s;
+}
+
+.add-btn {
+background: #247447;
+color: white;
+}
+
+.add-btn:hover,
+.water-btn:hover {
+background: #165531;
+}
+
+.section-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+}
+
+.section-heading h2 {
+margin-bottom: 0;
+}
+
+#plantCount {
+color: #718075;
+font-size: 14px;
+}
+
+.plant-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 16px;
+margin-top: 20px;
+}
+
+.plant-card {
+border: 1px solid #e0e9e0;
+border-radius: 13px;
+padding: 18px;
+background: #fcfefb;
+}
+
+.plant-top {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+align-items: flex-start;
+}
+
+.plant-name {
+font-size: 19px;
+overflow-wrap: anywhere;
+}
+
+.plant-icon {
+font-size: 30px;
+}
+
+.plant-info {
+margin: 12px 0;
+color: #637367;
+font-size: 14px;
+}
+
+.status {
+display: inline-block;
+padding: 5px 10px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: bold;
+margin-top: 5px;
+}
+
+.status-due {
+color: #995319;
+background: #fff0d9;
+}
+
+.status-done {
+color: #176b39;
+background: #ddf7e4;
+}
+
+.plant-actions {
+display: flex;
+gap: 10px;
+margin-top: 15px;
+}
+
+.water-btn {
+flex: 1;
+background: #247447;
+color: white;
+}
+
+.delete-btn {
+background: #ffe8e8;
+color: #a32b2b;
+}
+
+.empty-message {
+text-align: center;
+padding: 35px 10px;
+color: #718075;
+}
+
+footer {
+text-align: center;
+padding: 15px;
+color: #718075;
+font-size: 13px;
+}
+
+@media (max-width: 700px) {
+.header {
+padding: 20px;
+}
+
+.header h1 {
+    font-size: 22px;
+}
+
+.badge {
+    font-size: 11px;
+}
+
+.welcome h2 {
+    font-size: 23px;
+}
+
+.stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+#plantForm {
+    grid-template-columns: 1fr;
+}
+
+.plant-list {
+    grid-template-columns: 1fr;
+}
+
+.form-section,
+.plants-section {
+    padding: 18px;
+}
+
+}
